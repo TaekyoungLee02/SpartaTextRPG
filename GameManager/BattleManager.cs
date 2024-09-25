@@ -42,6 +42,7 @@ namespace TextRPG.GameManager
         {
             bool end;
             int winner;
+            actionQueue.Clear();
 
             do
             {
@@ -155,6 +156,9 @@ namespace TextRPG.GameManager
                     Console.ReadLine();
                 }
             }
+
+            actionQueue.Clear();
+
 
             if (characters[0].CurHP <= 0)
             {
